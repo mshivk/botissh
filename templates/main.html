@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Telegram Bot lookup</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+<h1> Welcome to Telegram botissh Search </h1>
+
+ </head>
+ 
+ <body>
+This page demonstrates 5 REST APIs exposed in the botissh Telegram bot.
+<p><h3>1.<a href="/api/userslist/">List of users</a></h3></p>
+
+<p><h3>2.<a href="/api/allconversations/">All Conversations</a></h3></p>
+
+<h3>3: Conversations filtered by user</h3>
+
+<p>Click on the username to filter his/her conversations<br/></p>
+    {% for user in resdata %}
+        <a  href="/api/userconv/{{ user }}"> {{ user }} </a><br/>             
+     {% endfor %}
+    
+<h3>4. Free text Search</h3>
+
+<script>
+	function searchText(){
+    	var inputValue = document.getElementById('searchId').value;
+    	document.getElementById('submitId').href = "/api/freesearch/" + inputValue;
+  	}  	
+</script>
+<input   type=text id="searchId" onblur="searchText();">
+<a href="" id="submitId">Search</a><br><br>
+
+<h3>4. Filter conversations by date, enter YYYY-MM-DD</h3>
+
+<script>
+	function searchByDate(){
+    	var inputDateValue = document.getElementById('datesearchId').value;
+    	document.getElementById('submitDateId').href = "/api/bydate/" + inputDateValue;
+  	}  	
+</script>
+<input   type=text id="datesearchId" onblur="searchByDate();">
+<a href="" id="submitDateId">Search</a><br><br>
+ <footer>
+            Copyright&copy2016  - S
+ </footer>
+ </body>
+ </html>
