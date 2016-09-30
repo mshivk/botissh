@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Simple Bot to reply to Telegram messages. This is  built on the telegram.ext bot framework.
+# Simple Bot to reply to Telegram messages. This is built on the telegram.ext part of python-telegram-bot package.
 from telegram.ext import Updater,CommandHandler
 import mongoConnect 
 
@@ -16,7 +16,6 @@ def dbupdate(bot,update, text =''):
             'userFn': update.message.chat.first_name,
             'utcnow':update.message.date
              }
-    #print dbDoc
     mongoConnect.insertOne(dbDoc)
 
 

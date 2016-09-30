@@ -13,7 +13,7 @@ Setup:
 Usage:
 - In the Telegram client (on the phone or web), search and find a bot named 'botissh'
     - Enter /start, or /joke or anything then that gets echoed.
-- Test the REST APIs in the browser
+- Test the REST APIs, in the browser
 
     http://127.0.0.1:5000/ --> Main page
     http://127.0.0.1:5000/api/userslist/  --> Lists all boot users
