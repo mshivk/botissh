@@ -16,8 +16,12 @@ Usage:
 - Test the REST APIs, in the browser
 
     http://127.0.0.1:5000/ --> Main page
+
     http://127.0.0.1:5000/api/userslist/  --> Lists all boot users
+
     http://127.0.0.1:5000/api/userconv/Foo --> User Foo's conversation
+
     http://127.0.0.1:5000/api/freesearch/water --> Lists conversations that has the word 'water' in it.
+    
     http://127.0.0.1:5000/api/allconversations/ --> Lists all the conversations
 
