@@ -14,6 +14,7 @@ Usage:
     http://127.0.0.1:5000/api/userconv/Shivakumar --> User Shivakumar's conversation
     http://127.0.0.1:5000/api/freesearch/water --> Lists conversations that has the word 'water' in it.
     http://127.0.0.1:5000/api/allconversations/ --> Lists all the conversations
+    http://127.0.0.1:5000/api/bydate/2016-09-29 --> Lists all conversations on a given date
 """
 
 app = Flask(__name__)
