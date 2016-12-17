@@ -25,5 +25,5 @@ Usage:
 
     http://127.0.0.1:5000/api/allconversations/ --> Lists all the conversations
 
-    http://127.0.0.1:5000/api/bydate/2016-09-29 --> Lists all the conversations on a given date
+    http://127.0.0.1:5000/api/bydate/<YYYY-MM--DD> --> Lists all the conversations on a given date
 
